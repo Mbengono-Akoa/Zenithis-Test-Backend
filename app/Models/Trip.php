@@ -8,11 +8,18 @@ use Illuminate\Database\Eloquent\Model;
 class Trip extends Model
 {
     use HasFactory;
-    
+
     protected $fillable = [
+        'user_id',
         'destination',
-        'date',
-        'user_id'
+        'start_date',
+        'end_date',
+        'comment'
+    ];
+
+    protected $casts = [
+        'start_date' => 'datetime',
+        'end_date' => 'datetime',
     ];
 
     public function user()
