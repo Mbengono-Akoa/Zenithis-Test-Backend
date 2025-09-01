@@ -1,0 +1,14 @@
+# Ignore vendor directory
+vendor/
+
+# Common .gitignore entries
+node_modules/
+dist/
+build/
+*.log
+.DS_Store
+.env
+*.env
+coverage/
+tmp/
+.cache/
